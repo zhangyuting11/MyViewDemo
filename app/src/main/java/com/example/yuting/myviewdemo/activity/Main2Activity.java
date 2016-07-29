@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.example.yuting.myviewdemo.R;
 import com.example.yuting.myviewdemo.fragment.ChartFragment;
+import com.example.yuting.myviewdemo.fragment.LeaveCarframent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +26,7 @@ public class Main2Activity extends AppCompatActivity {
         pos = getIntent().getIntExtra("tag", 0);
 
         fragments.add(new ChartFragment());
+        fragments.add(new LeaveCarframent());
 
         getSupportFragmentManager()
                 .beginTransaction()
